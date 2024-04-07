@@ -3,9 +3,9 @@ $(function () {
 
   // Code for the "No" button's hover effect
 });
-// $(document).on("click", "#yesButton", function () {
-//   $("#popup-card").removeClass("hidden");
-// });
+$(document).on("click", "#yesButton", function () {
+  $("#popup-card").removeClass("hidden");
+});
 
 $("#noButton").hover(function () {
   const card = $(this).closest(".card");
@@ -25,14 +25,5 @@ $("#noButton").hover(function () {
     position: "absolute",
     left: newX + "px",
     top: newY + "px",
-  });
-});
-$(function () {
-  // $("#yesButton").on("click touchstart", function (e) {
-  //   e.preventDefault(); // Prevent default action of the event
-  //   $("#popup-card").removeClass("hidden");
-  // });
-  $("#yesButton").click(function () {
-    $("#popup-card").removeClass("hidden");
   });
 });
